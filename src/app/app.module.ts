@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GitsearchFormComponent } from './gitsearch-form/gitsearch-form.component';
+import { GitsearchComponent } from './gitsearch/gitsearch.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GitsearchFormComponent
+    GitsearchFormComponent,
+    GitsearchComponent
   ],
   imports: [
     BrowserModule,
