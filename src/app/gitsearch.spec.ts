@@ -1,4 +1,4 @@
-import { Gitsearch } from './gitsearch';
+import { Gitsearch } from './user';
 
 describe('Gitsearch', () => {
   it('should create an instance', () => {
