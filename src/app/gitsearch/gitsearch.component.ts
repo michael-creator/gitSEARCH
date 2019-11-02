@@ -1,4 +1,8 @@
+import { GitsearchService } from '../gitsearch-service/gitsearch.service';
+import { Gitsearch } from '../user';
 import { Component, OnInit } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-gitsearch',
@@ -7,7 +11,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GitsearchComponent implements OnInit {
 
-  constructor() { }
+  gitsearchs:Gitsearch[];
+  
+  constructor(gitsearchService:GitsearchService) {
+    
+  }
 
   ngOnInit() {
   }
