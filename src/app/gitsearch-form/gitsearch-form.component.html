@@ -1,8 +1,10 @@
 <div class="container-fluid">
     <h2 class="text-center">Create a new search</h2>
     <hr>
-<form class="example" action="action_page.php">
-    <input type="text" placeholder="Search.." name="search">
-    <button type="submit"><i class="fa fa-search"></i></button>
+
+  <form class="form-inline">
+    <input type="text" class="form-control mr-10" placeholder="Search" 
+    name="searchTerm" id="searchTerm" [(ngModel)]="searchTerm">
+    <button class="btn btn-primary" (click) ='search()'>Search</button>
   </form>
 </div>
