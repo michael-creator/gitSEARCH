@@ -5,17 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GitsearchFormComponent } from './gitsearch-form/gitsearch-form.component';
 import { GitsearchComponent } from './gitsearch/gitsearch.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
+import { RepositoryComponent } from './repository/repository.component';
 @NgModule({
   declarations: [
     AppComponent,
     GitsearchFormComponent,
-    GitsearchComponent
+    GitsearchComponent,
+    NavbarComponent,
+    RepositoryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
