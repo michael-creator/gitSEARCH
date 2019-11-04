@@ -1,7 +1,7 @@
 import { GitsearchService } from '../gitsearch-service/gitsearch.service';
-import { Gitsearch } from '../user';
+import { User } from '../user';
 import { Component, OnInit } from '@angular/core';
-
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -11,13 +11,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GitsearchComponent implements OnInit {
 
-  gitsearchs:Gitsearch[];
-  
-  constructor(gitsearchService:GitsearchService) {
+	user:User;  
+  constructor(private gitsearchService: GitsearchService) {
     
   }
+	ngOnInit() {
+		this.doSearch("torvalds");
+	}
 
-  ngOnInit() {
-  }
-
+	doSearch(search:string){
+	this.gitsearchService.getUser(search).then(
+		(res)=>{this.user=this.gitsearchService.user;},
+		(error)=>{}
+	);
+		
+	}
+	
 }
+		
