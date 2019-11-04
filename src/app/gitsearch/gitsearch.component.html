@@ -1,6 +1,12 @@
-<!--The content below is only a placeholder and can be replaced.-->
-
-  
-  
-  <router-outlet></router-outlet>
-  
+<app-gitsearch-form (emitSearch)='doSearch($event)'></app-gitsearch-form>
+<div class="container bg-white p-3 mt-5" *ngIf='user'>
+  <ul>
+    <li>{{user.name}}</li>
+        <li>{{user.avatar}}</li>
+            <li>{{user.created_at}}</li>
+                <li>{{user.updated_at}}</li>
+ </ul>
+ <div class="card p-3 mt-5">
+ <img src="{{user.avatar}}" alt="">
+ </div>
+</div>
