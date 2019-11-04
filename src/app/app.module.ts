@@ -7,14 +7,14 @@ import { GitsearchFormComponent } from './gitsearch-form/gitsearch-form.componen
 import { GitsearchComponent } from './gitsearch/gitsearch.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
-import { RepositoryComponent } from './repository/repository.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     GitsearchFormComponent,
     GitsearchComponent,
     NavbarComponent,
-    RepositoryComponent
+   
   ],
   imports: [
     BrowserModule,
