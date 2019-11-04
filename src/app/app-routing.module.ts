@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {GitsearchComponent} from './gitsearch/gitsearch.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [{path:'**',component:GitsearchComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
