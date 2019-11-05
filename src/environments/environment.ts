@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  github_api:'gjfhdgf'
+  github_api:''
 };
 
 /*
