@@ -14,7 +14,8 @@ export class GitsearchService {
   { this.user= new User("Test name","Test avatar", "Test created", "Test updated"); }
 
   getUser(username:string){
-      let url = "https://api.github.com/users/"+username+"?access_token="+environment;
+      let url = "https://api.github.com/users/"+username+"?access_token="+environment.github_api  
+      ;
 
       let promise = new Promise(
         (resolve,reject)=>{

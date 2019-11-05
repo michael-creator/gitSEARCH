@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {GitsearchComponent} from './gitsearch/gitsearch.component'
 
 
-const routes: Routes = [{path:'user',component:GitsearchComponent}];
+const routes: Routes = [{path:'gitsearch',component:GitsearchComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
