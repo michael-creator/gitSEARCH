@@ -120,8 +120,12 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/Gitsearch",
+            "netlifyToken": "5b81ea5feef75bfbba3b6a41440c840ee5e77885d661b5b752d597ba441def30",
+            "siteId": "a2450ce7-5467-4e3a-8f97-bf25c3d007f4"
+          }
         }
       }
     }
